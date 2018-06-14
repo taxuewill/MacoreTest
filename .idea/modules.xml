@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MacoreTest.iml" filepath="$PROJECT_DIR$/MacoreTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compile/compile.iml" filepath="$PROJECT_DIR$/compile/compile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/macore/macore.iml" filepath="$PROJECT_DIR$/macore/macore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stub/stub.iml" filepath="$PROJECT_DIR$/stub/stub.iml" />
+    </modules>
+  </component>
+</project>
