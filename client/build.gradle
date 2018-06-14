@@ -4,6 +4,11 @@ android {
     compileSdkVersion 27
 
 
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
 
     defaultConfig {
         applicationId "com.will.client"

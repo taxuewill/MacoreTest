@@ -1,5 +1,30 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 
+ext {
+    bintrayRepo = 'macore'
+    bintrayName = 'macore'
+
+    publishedGroupId = 'com.taxuewill'
+    libraryName = 'Macore'
+    artifact = 'macore'
+
+    libraryDescription = 'This view is a container that supports diagonal scroll and fling gesture. It is based on AOSP HorizontalScrollView.'
+
+    siteUrl = 'https://github.com/taxuewill/MacoreTest'
+    gitUrl = 'https://github.com/taxuewill/MacoreTest.git'
+
+    libraryVersion = '0.3.3'
+
+    developerId = 'taxuewill'
+    developerName = 'wang jing'
+    developerEmail = 'collpym@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 27
 
@@ -12,13 +37,28 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+    buildscript {
+        repositories {
+            jcenter()
+        }
+
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
 }
+
+
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -34,3 +74,7 @@ dependencies {
 
 }
 
+
+
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
