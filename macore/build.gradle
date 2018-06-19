@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
 
 ext {
     bintrayRepo = 'macore'
@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/taxuewill/MacoreTest'
     gitUrl = 'https://github.com/taxuewill/MacoreTest.git'
 
-    libraryVersion = '0.3.3'
+    libraryVersion = '0.3.5'
 
     developerId = 'taxuewill'
     developerName = 'wang jing'
@@ -67,14 +67,14 @@ dependencies {
     })
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:27.1.1'
-    provided project(':stub')
+    provided 'com.taxuewill:stub:0.1.0'
     compile 'io.reactivex.rxjava2:rxjava:2.1.14'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.2'
-    compile project(':annotation')
+    compile 'com.taxuewill:annotation:0.1.0'
 
 }
 
 
 
-apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
-apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
+//apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+//apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'

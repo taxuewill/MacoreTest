@@ -1,5 +1,33 @@
 apply plugin: 'java'
 
+ext {
+    bintrayRepo = 'annotation'
+    bintrayName = 'annotation'
+
+    publishedGroupId = 'com.taxuewill'
+    libraryName = 'annotation'
+    artifact = 'annotation'
+
+    libraryDescription = 'This view is a container that supports diagonal scroll and fling gesture. It is based on AOSP HorizontalScrollView.'
+
+    siteUrl = 'https://github.com/taxuewill/MacoreTest'
+    gitUrl = 'https://github.com/taxuewill/MacoreTest.git'
+
+    libraryVersion = '0.1.0'
+
+    bintrayName = 'annotation'
+    artifact = bintrayName
+
+    developerId = 'taxuewill'
+    developerName = 'wang jing'
+    developerEmail = 'collpym@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
@@ -7,3 +35,6 @@ dependencies {
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
 
+//
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
