@@ -6,6 +6,8 @@ import android.util.Log;
 import com.linked.annotion.Action;
 import com.will.common.config.ClientConfig;
 
+import java.util.Map;
+
 import macore.MaAction;
 import macore.router.MaActionResult;
 import macore.router.RouterRequest;
@@ -25,6 +27,10 @@ public class RpcAction implements MaAction {
     @Override
     public MaActionResult invoke(Context context, RouterRequest routerRequest) {
         Log.i(TAG,"invoke " +routerRequest);
+        Map<String,String> params = routerRequest.getData();
+        for(String key : params.keySet()){
+            Log.i(TAG,"key["+key+"],value is "+params.get(key));
+        }
         return null;
     }
 

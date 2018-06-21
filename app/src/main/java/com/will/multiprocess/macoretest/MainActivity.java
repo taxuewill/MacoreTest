@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
                 .withString("name","will")
                 .navigation();
         finish();
-//        try {
-//            LocalRouter.getInstance(MainApplicationLogic.getMaApplication()).rxRoute(MainApplication.getMaApplication(), RouterRequestUtil.obtain(MainApplication.getMaApplication())
-//                    .domain(ClientConfig.processName)
-//                    .provider(ClientConfig.providerName)
-//                    .action(ClientConfig.rpcActionName));
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            LocalRouter.getInstance(MainApplicationLogic.getMaApplication()).rxRoute(MainApplication.getMaApplication(), RouterRequestUtil.obtain(MainApplication.getMaApplication())
+                    .domain(ClientConfig.processName)
+                    .provider(ClientConfig.providerName)
+                    .action(ClientConfig.rpcActionName));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
